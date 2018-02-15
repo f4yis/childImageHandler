@@ -4,6 +4,7 @@ var cors = require('cors')
 var fs = require('fs')
 
 var app = express()
+var port = process.env.PORT || 8080;
 
 app.use(cors())
 
@@ -26,4 +27,4 @@ app.post('/image', (req, res) => {
 })
 
 
-app.listen(3000);
+app.listen(port);
